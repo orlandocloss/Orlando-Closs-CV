@@ -1,0 +1,265 @@
+%-------------------------
+% CV in Latex
+% Author: Orlando Closs
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[a4paper,11pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSkill}[2]{
+    \vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}p{0.7\textwidth}}
+        \textbf{#1} & #2 \\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Orlando Closs} % Your Name
+\newcommand{\course}{BSc. Artificial Intelligence} % Your Program
+\newcommand{\phone}{628835745} % Your Phone Number
+\newcommand{\emaila}{orlandocloss1@gmail.com} %Email 1
+
+
+
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+
+
+\parbox{2.35cm}{%
+\includegraphics[width=2.35cm,clip]{nitman.png}}
+\parbox{\dimexpr\linewidth-2.8cm\relax}{
+\begin{tabularx}{\linewidth}{L r} \\
+  &  \href{mailto:\\orlandocloss1@gmail.com}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}}\\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +31 \phone} \\
+  &  \href{https://github.com/orlandocloss/}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {orlandocloss}} \\
+   & \href{https://www.linkedin.com/in/orlando-closs-899042187/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {Orlando Closs}}
+\end{tabularx}
+}
+
+% \parbox{3.0cm}{%
+% \flushright \includegraphics[width=2cm,clip]{nitp_logo.png}
+% }
+
+
+
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vrije Universiteit Amsterdam}{}
+      {Bachelor's Degree, Artificial Intelligence}{Sept 2021 - Jul 2024}
+    \resumeSubheading
+      {Universitetet i Oslo}{}
+      {Exchange Programme}{Aug 2023 - Dec 2023}
+    \resumeSubheading
+      {Bedales School, United Kingdom}{3 A*'s}
+      {GCE Advanced Level (Maths, Physics, English)}{Sept 2019 - Jul 2021}
+    \resumeSubheading
+      {Harrow School, United Kingdom}{10 A*'s}
+      {IGCSE}{Sept 2016 - July 2019}
+  \resumeSubHeadingListEnd
+\vspace{-5.5mm}
+%
+
+
+
+%-----------EXPERIENCE-----------------
+\section{\textbf{Experience}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {AI Intern \( \rightarrow \) Software Engineer}{Delft, The Netherlands}
+      {Mythronics}{Dec 2021 - Apr 2023}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Tomato tracking and counting implementation to predict future yield.}
+    \item {Labelling and preprocessing of data,  generating synthetic datasets.}
+    \item {Training object detection models for tomato ripeness.}
+    \resumeItemListEnd
+    
+    \vspace{-3.0mm}
+    
+    \resumeSubheading
+      {Temporary Office Manager}{London, United Kingdom}
+      {Studio Wilson-Copp}{Jul 2020 - Aug 2020}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Sending out invoices, communicating with potential clients, organizing receipts.}
+    \item {Auditing CV's to find a suitable replacement.}
+    \resumeItemListEnd
+
+    \vspace{-3.0mm}
+    
+    \resumeSubheading
+      {Video Production Intern}{London, United Kingdom}
+      {Hireworks}{Jul 2019 - Aug 2019}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {General assistant in day-to-day basic tasks.}
+    \item {Learnt about the process of television production.}
+    \resumeItemListEnd
+
+    \vspace{-3.0mm}
+    
+    \resumeSubheading
+      {Marketing Intern}{London, United Kingdom}
+      {biobean Limited}{Apr 2018 - May 2018}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+    \item {Started up their YouTube channel and created
+    thumbnails.}
+    \item {Devised, organized and implemented a micro-
+    tagging catalogue of their stock images.}
+    \item {Worked up schemes for the company’s Instagram engagement to grow.}
+    \resumeItemListEnd
+
+    
+      
+  \resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+%-----------PROJECTS-----------------
+\section{\textbf{Skills}}
+\resumeSubHeadingListStart
+    \resumeSkill{Python}{Gained experience through university studies, role at \textit{Mythronics} and personal projects. Specifically with libraries opencv, numpy, pytorch, pandas, transformers.}
+    \resumeSkill{HTML, CSS, PHP}{Have created my own custom wordpress theme using these languages for brother's production company.}
+    \resumeSkill{LaTeX}{Language used to format documents, gained experience through university studies (this document was created in LaTeX).}
+    \resumeSkill{Unix/Linux}{Daily personal use on home computer and experience from work at \textit{Mythronics}.}
+    \resumeSkill{Computer Vision}{Gained experience from \textit{Mythronics} in labelling image data, preparing data for training (including generating synthetic data) and executing training with YOLOv4 and MaskRCNN networks. Also
+    devised my own strategy for tracking objects in
+    inference. .}
+    \resumeSkill{Marketing \& Content}{My work at \textit{biobean} dealt with editing and captioning social media posts and creating new content. Have also had experience growing and selling theme related social media pages as well as video editing experience from my internship at \textit{Hirework}s and personal projects.}
+    \resumeSkill{Organisation}{I consider myself an organised person on a day-to-day basis; proof of this within a work environment can be shown through my work at \textit{Studio Wilson Copp} and \textit{biobean Limited}.}
+    \resumeSkill{Writing \& Communication}{Was awarded A*’s in English Language and English Literature at IGCSE as well as an A* in English GCE A Level; my writing has proved to be an asset throughout all of my work experience. I am a very sociable person and extend this effort in work environments. }
+\resumeSubHeadingListEnd
+\vspace{-8.5mm}
+
+
+
+
+%-------------------------------------------
+\end{document}
